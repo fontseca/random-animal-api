@@ -6,7 +6,7 @@ Get a random animal based on a category and language.
 
 | ENDPOINT | HTTP VERB | DESCRIPTION |
 |------------------|----------------|-------------|
-| **`/animal`** | `GET` | Random animal (mammal) in Enlish |
+| **`/animal`** | `GET` | Random animal (mammal) in English |
 | **`/animal?lang={lang}`** | `GET`| Random anmial (mammal) in `lang` |
 | **`/animal?category={category}`** | `GET`| Random animal based on its category (only mammals for this version) 
 
