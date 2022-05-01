@@ -22,7 +22,7 @@ export default function getRandomAnimal(lang = 'en', category = 'mammals') {
 
   // english results
   lang === 'en' && (o = (function () {
-    let randIndex = +(Math.random() * mammalsEn.length).toFixed();
+    let randIndex = +(Math.random() * mammalsEn.length - 1).toFixed();
 
     switch (category) {
       case 'mammals':
@@ -32,7 +32,8 @@ export default function getRandomAnimal(lang = 'en', category = 'mammals') {
 
   // spanish results|
   lang === 'es' && (o = (function () {
-    let randIndex = +(Math.random() * mammalsEs.length).toFixed();
+    let randIndex = +(Math.random() * (mammalsEs.length - 1)).toFixed();
+    console.log(randIndex);
 
     switch (category) {
       case 'mammals':
